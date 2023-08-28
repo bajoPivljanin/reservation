@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+header h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+header{
+    box-shadow: rgba(0,0,0,1) 0 0 0 10000px inset;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+    z-index: 99;
+}
+header h1:hover span{
+    color: #b5a438;
+}
+header h1 span{
+    transition: 0.3s;
+}
+header h1{
+    letter-spacing: 3px;
+    margin-right: 378px;
+}
+header .right-nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+}
+.right-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.right-nav ul{
+    padding-top: 9px;
+    margin-left: -93px;
+    transition: 0.4s;
+}
+.right-nav i{
+    color: white;
+    margin-left: 17px;
+    font-size: 19px;
+    transition: 0.3s;
+}
+.right-nav i:hover{
+    color: #b5a438;
+}
+.right-nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #b5a438;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.right-nav ul li a:hover::after{
+    width: 100%;
+}
+.right-nav #fb{
+    position: absolute;
+    right: 290px;
+    top: 25px;
+}
+.right-nav #insta{
+    position: absolute;
+    right: 250px;
+    top: 26px;
+}
+.right-nav #login{
+    position: absolute;
+    right: 210px;
+    top: 26px;
+}
+.right-nav #admin{
+    position: absolute;
+    right: 290px;
+    top: 26px;
+}
+.hero-sec{
+    background:url(../img/hero.jpg);
+    padding-top: 300px;
+    padding-bottom: 320px;
+    text-align: center;
+    box-shadow: rgba(0,0,0,0.7) 0 0 0 10000px inset;
+    background-size: cover;
+    color: white;
+    text-transform: uppercase;
+}
+.hero-sec p{
+    font-size: 20px;
+    user-select: none;
+    font-weight: bold;
+}
+.hero-sec h1{
+    font-size: 90px;
+    margin-top: -14px;
+    margin-bottom: 13px;
+    user-select: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.hero-sec span{
+    color: #b5a438;
+}
+.hero-sec a{
+    text-decoration: none;
+}
+.hero-sec p{
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.hero-sec .fademove{
+    transform: translateX(0);
+    opacity: 1; 
+}
+.hero-sec button{
+    margin-top: 40px;
+    padding: 8px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b5a438;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #b5a438;
+    transition: 0.4s;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.hero-sec button:hover{
+    background-color: transparent;
+}
+.aboutsec{
+    color: white;
+    background-color: black;
+    padding: 100px 0px;
+}
+.aboutsec a{
+    text-decoration: none;
+}
+.aboutsec h2{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.aboutsec h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.aboutsec p{
+    color: #666262;
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.aboutsec span{
+    color: #b5a438;
+}
+.aboutsec #aposao{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #b5a438;
+    text-decoration: none;
+    padding: 15px 100px;
+    border-radius:10px;
+    border: 1px solid #b5a438;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+#aposao{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #b5a438;
+    text-decoration: none;
+    padding: 15px 100px;
+    border-radius:10px;
+    border: 1px solid #b5a438;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.aboutsec #aposao:hover{
+    border: 1px solid #b5a438;
+    background-color: transparent;
+    color: white;
+}
+#aposao:hover{
+    border: 1px solid #b5a438;
+    background-color: transparent;
+    color: white;
+}
+.vl {
+    border-left: 2px solid #404040;
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    width: 1%;
+}
+.desno-radno{
+    margin-left: 100px;
+}
+.desno-radno #radnih{
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.desno-radno #radnip{
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.desno-radno p{
+    margin-top: -5px;
+}
+.desno-radno #radnihd{
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+.desno-radno #radnipd{
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+
+
+/*meni*/
+.meni-sec{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    box-shadow: rgba(0,0,0,0.4) 0 0 0 10000px inset;
+}
+.meni {
+	max-width: 1000px;
+	margin: auto;
+    padding-bottom: 50px;
+    padding: 0px 50px;
+    background-color: white;
+}
+
+.meni h1{
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+
+.meni-kategorije {
+	padding-bottom: 30px;
+	padding-top: 10px;
+	text-align: center;
+    opacity: 0;
+    transition: all 0.6s ease;
+    transform: translateY(90px);
+}
+
+.meni-kategorije button {
+	padding: 8px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #b5a438;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.meni-kategorije button:hover{
+    background-color: transparent;
+    border: 2px solid #b5a438;
+}
+
+.meni-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.meni-single-item {
+	width: 30%;
+	box-shadow: 0 18px 25px 3px rgba(0, 0, 0, 0.14), 0 6px 35px 8px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    padding-top: 0px;
+	margin-bottom: 5%;
+    border-radius: 15px;
+    display: none;
+    transition: 0.5s;
+    user-select: none;
+}
+.meni-single-item img{
+    width: 100%;
+    height: 240px;
+}
+.meni-single-item h3{
+    font-size: 30px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.meni-single-item p{
+    text-align: center;
+    color: #666262;
+}
+.meni-single-item:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 18px 5px 3px rgba(0, 0, 0, 0.14), 0 6px 35px 8px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#kbmn{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 30px;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+.meni a{
+    text-decoration: none;
+    color: black;
+    cursor:default;
+    user-select: none;
+}
+.rose img{
+    height: 280px;
+}
+.meni-single-item .rose
+{
+    padding-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .meni-single-item {
+        width: 47%;
+    }
+}
+
+.contactsec{
+    background-color: black;
+    color: white;
+    padding: 120px 0px;
+}
+.contactsec h1{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.contactsec .levocontact{
+    margin-left: 180px;
+}
+
+.contactsec .levocontact p{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #666262;
+}
+.contactsec .tekst-contact{
+    margin-top: 30px;
+}
+.contactsec .levocontact p::before{
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+    margin-right: 12px;
+    font-size: 15px;
+    content: "\f095";
+    color: #f13a11;
+}
+.contactsec .levocontact #gmailcontact::before{
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+    margin-right: 12px;
+    font-size: 15px;
+    content: "\40";
+    color: #f13a11;
+}
+.contactsec .desnocontact p{
+    font-size: 20px;
+}
+.contactsec .desnocontact p::before{
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+    margin-right: 12px;
+    content: "\f3c5";
+    color: #f13a11;
+    font-size: 19px;
+}
+.contactsec .lokacije{
+    margin-top: 20px;
+}
+.contactsec .desnocontact{
+    margin-left: 100px;
+}
+footer{
+    background-color: black;
+}
+#kopiprava{
+    text-align: center;
+    color: #666262;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-device-width:425px) and (min-device-width:320px) {
+    .hero-sec{
+        width: 100%;
+    }
+    .levocontact{
+        position: relative;
+        right: 45%;
+        padding-bottom: 60px;
+    }
+    .levocontact .tekst-contact p{
+       font-size: 20px;
+       display:grid;
+    }
+    .levocontact .tekst-contact hr{
+        width: 200px;
+    }
+    .desnocontact{
+        position: relative;
+        right: 18%;
+        top: 40px;
+    }
+    .contactsec{
+        padding-top: 90px;
+    }
+    .meni .container{
+        width: 100%;
+    }
+    .meni button{
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .meni #kbmn{
+        font-size: 30px;
+    }
+    .meni-items h3{
+        font-size: 18px;
+    }
+    .meni{
+        padding-bottom: 70px;
+        padding-left:0px;
+        padding-right: 0px;
+    }
+    .meni-sec{
+         background-image: none;
+    }
+    .meni-items .meni-single-item img{
+        height: 50%;
+    }
+    .meni-items .meni-single-item .sokresp{
+        height: 60%;
+        width: 100%;       
+    }
+    .meni-items .meni-single-item p{
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+    .meni-items .meni-single-item{
+        padding-bottom: 0px;
+    }
+    .vl{
+        display: none;
+    }
+    .leviabout #aposao{
+       padding: 15px 35px;
+       margin-left: 23%;
+    }
+    .leviabout p{
+        padding-top: 20px;
+    }
+    .desno-radno{
+        padding-top: 90px;
+        text-align: center;
+        position: relative;
+        right: 16%;
+    }
+    header .right-nav ul li{
+        text-align: center;
+        padding-left: 17%;
+        margin-top: 8px;
+        display: block;
+    }
+    header .right-nav ul{
+        display: none;
+    }
+    header h1{
+        font-size: 28.5px;
+        margin-right: 100px;
+        padding-top: 7px;
+    }
+    header .right-nav #fb {
+        top:210px;
+        left: -7px;
+        display: none;
+    }
+    header .right-nav #insta {
+       top: 211px;
+       left: 20px;
+       display: none;
+    }
+    header .right-nav #admin {
+        top:210px;
+        left: -7px;
+        display: none;
+    }
+    header .right-nav #login {
+       top: 211px;
+       left: 20px;
+       display: none;
+    }
+    .meni-kategorije{
+        display: flex;
+    }
+    .levocontact{
+        padding-left: 15%;
+    }
+    .desnocontact,.lokacije{
+        padding-left: 9%;
+    }
+    
+}
+#menuopen{
+    display: none;
+}
+#closemenus{
+    display: none;
+}
+@media (max-width: 430px)
+{
+    .openmenuclas{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    #menuopen{
+        display: block;
+    }
+    #closemenus{
+        color: white;
+        position: absolute;
+        top: -2px;
+        right: 1px;
+        display: none;
+    }
+}
+@media only screen and (max-device-width:375px) and (min-device-width:320px) {
+    .meni button{
+        padding: 5px 4px;
+        
+    }
+}
+@media only screen and (max-device-width:320px) {
+    .meni button{
+        padding: 5px 1px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-device-width:768px) and (min-device-width:425px) {
+    .vl{
+        left: 54%;
+         top: 62rem;
+         height: 31rem;
+    }
+    .contactsec .levocontact {
+        margin-left: 86px !important;
+    }
+    .right-nav ul{
+        margin-left: -199px;
+    }
+    .right-nav #insta{
+        right: 5rem;
+        top: 5rem;
+    }
+    .right-nav #fb{
+        right: 8rem;
+        top: 5rem;
+    }
+    .right-nav #login{
+        right: 2rem;
+        top: 5rem;
+    }
+    .right-nav #fb{
+        right: 8rem;
+        top: 5rem;
+    }
+}
